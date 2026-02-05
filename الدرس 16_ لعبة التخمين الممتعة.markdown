@@ -1,0 +1,108 @@
+<div dir="rtl">
+
+##### **سكريبت الشرح (بلهجة مصرية) - 60 دقيقة**
+**0-5 دقايق: مقدمة ممتعة**
+"يا شباب، جاهزين تلعبوا لعبة ممتعة؟ هنعمل لعبة تخمين، الكمبيوتر هيختار رقم سري، وإنتوا هتحاولوا تتخمنوه! لو تخمنتوا غلط، هيديكم تلميح زي 'الرقم أكبر' أو 'الرقم أصغر'. هنستخدم كل اللي اتعلمناه زي `input` والشروط وحلقات `while`. يلا، خلونا نلعب!"
+**5-20 دقيقة: شرح لعبة التخمين**
+"هنعمل برنامج يختار رقم سري بين 1 و10، ويسأل اللاعب يتخمن الرقم. لو التخمين غلط، يدي تلميح ويخلي اللاعب يجرب تاني. هنستخدم مكتبة `random` عشان نختار رقم عشوائي. الكود كده:
+```python
+import random
+secret_number = random.randint(1, 10)
+print('I chose a secret number between 1 and 10, try to guess it!')
+while True:
+    guess = int(input('What is your guess? '))
+    if guess == secret_number:
+        print('Great! You found the secret number!')
+        break
+    elif guess < secret_number:
+        print('No, the secret number is bigger than', guess)
+    else:
+        print('No, the secret number is smaller than', guess)
+```
+لما نشغل الكود، هيسألك تتخمن الرقم، ويظل يديك تلميحات لحد ما تلاقي الرقم السري.
+خلونا نفهم الكود:
+- `import random` يجيب مكتبة الأرقام العشوائية.
+- `random.randint(1, 10)` يختار رقم عشوائي بين 1 و10 (يعني 1، 2، ...، 10).
+- `while True:` يعني كرر للأبد لحد ما نقوله يتوقف.
+- `guess = int(input(...))` ياخد تخمين اللاعب ويحوله لـرقم.
+- `if guess == secret_number:` لو التخمين صح، يطبع 'Great' ويوقف الحلقة بـ`break`.
+- `elif guess < secret_number:` لو التخمين أصغر، يدي تلميح إن الرقم أكبر.
+- `else:` لو التخمين أكبر، يدي تلميح إن الرقم أصغر.
+*(ارسم على السبورة أرقام من 1 لـ10، وجنبها لاعب بيتخمن، وسهم يشير للرقم السري. وضح إزاي التلميحات بتساعد.)*
+**20-40 دقيقة: نشاط تفاعلي**
+"هنعمل نشاطين! الأول، هنكتب اللعبة زي الكود بتاعنا. اكتبوا الكود ده:
+```python
+import random
+secret_number = random.randint(1, 10)
+print('I chose a secret number between 1 and 10, try to guess it!')
+while True:
+    guess = int(input('What is your guess? '))
+    if guess == secret_number:
+        print('Great! You found the secret number!')
+        break
+    elif guess < secret_number:
+        print('No, the secret number is bigger than', guess)
+    else:
+        print('No, the secret number is smaller than', guess)
+```
+افتحوا Thonny أو Replit، اكتبوا الكود، وجربوا تتخمنوا الرقم. لو لقيتوا الرقم السري، يبقى نجحتوا!"
+*(امنح 10 دقايق يكتبوا ويجربوا. ساعدهم لو نسيوا `break` أو `int`.)*
+"النشاط التاني، جربوا تغيروا النطاق من 1-10 لـ1-20 (يعني غيروا `random.randint(1, 20)`). هتبقى اللعبة أصعب! مين هيشارك كام محاولة خدته؟"
+*(امنح 5 دقايق إضافية للتجربة.)*
+**40-55 دقيقة: تحدي صغير + مناقشة**
+"عندنا تحدي! هنضيف عداد يحسب كام محاولة خدتها عشان تلاقي الرقم. غيروا الكود كده:
+```python
+import random
+secret_number = random.randint(1, 10)
+attempts = 0
+print('I chose a secret number between 1 and 10, try to guess it!')
+while True:
+    guess = int(input('What is your guess? '))
+    attempts = attempts + 1
+    if guess == secret_number:
+        print('Great! You found the secret number in', attempts, 'attempts!')
+        break
+    elif guess < secret_number:
+        print('No, the secret number is bigger than', guess)
+    else:
+        print('No, the secret number is smaller than', guess)
+```
+جربوا، وشوفوا كام محاولة خدتوا. مين هيشارك أقل عدد محاولات؟"
+*(امنح 5 دقايق يكتبوا، وبعدين اطلب من 2-3 أطفال يشاركوا.)*
+**55-60 دقيقة: تلخيص وتشجيع**
+"برافو عليكم! النهاردة بنينا لعبة تخمين ممتعة باستخدام `random` و`while`. المرة الجاية هنتعمق أكتر في الأرقام العشوائية ونعمل حاجات زي رمي زهر. فكروا في ألعاب تانية عايزين نعملها، وهنناقشها مع بعض!"
+##### **الهدف التعليمي**
+- إنشاء لعبة تخمين باستخدام `random`, `input`, و`while`.
+- فهم استخدام الأرقام العشوائية والتحكم في التكرار.
+- تطبيق الشروط والحلقات في مشروع تفاعلي.
+##### **مثال عملي**
+```python
+import random
+secret_number = random.randint(1, 10)
+print('I chose a secret number between 1 and 10, try to guess it!')
+while True:
+    guess = int(input('What is your guess? '))
+    if guess == secret_number:
+        print('Great! You found the secret number!')
+        break
+    elif guess < secret_number:
+        print('No, the secret number is bigger than', guess)
+    else:
+        print('No, the secret number is smaller than', guess)
+```
+##### **النشاط التطبيقي**
+- **المهمة 1**: كتابة برنامج لعبة التخمين.
+- **المهمة 2**: تغيير نطاق الأرقام لـ1-20.
+- **الكود**: كما في المثال العملي.
+- **الطريقة**: كتابة الكود في Thonny أو Replit.
+##### **التحدي الصغير**
+- **السؤال**: إضافة عداد للمحاولات.
+- **مثال إجابة**: الكود المعدل في التحدي.
+##### **نصايح للمعلم**
+- وضح فكرة اللعبة بمثال زي لعبة الكنز.
+- لو طفل نسي `break`, اشرح إن الحلقة هتفضل تكرر من غير توقف.
+- شجعهم يجربوا نطاقات أكبر زي 1-100.
+- لو في وقت، خليهم يضيفوا حد أقصى للمحاولات.
+- لو في أخطاء، زي إدخال نص بدل رقم، اشرح إزاي يفحصوا الإدخال.
+
+</div>

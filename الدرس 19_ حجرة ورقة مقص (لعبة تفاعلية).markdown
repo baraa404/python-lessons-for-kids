@@ -1,0 +1,128 @@
+<div dir="rtl">
+
+##### **سكريبت الشرح (بلهجة مصرية) - 60 دقيقة**
+**0-5 دقايق: مقدمة ممتعة**
+"يا شباب، مين لعب حجرة ورقة مقص قبل كده؟ لعبة ممتعة، صح؟ النهاردة هنعمل نسخة منها ببايثون! الكمبيوتر هيختار حاجة عشوائية (حجرة، ورقة، أو مقص)، وإنتوا هتختاروا، وبعدين نشوف مين اللي كسب! هنستخدم `random` و`input` والشروط. جاهزين تتحدوا الكمبيوتر؟ يلا!"
+**5-20 دقيقة: شرح لعبة حجرة ورقة مقص**
+"في اللعبة دي، اللاعب بيختار (حجرة، ورقة، مقص)، والكمبيوتر بيختار حاجة عشوائية باستخدام `random`. بعدين نفحص مين كسب بناءً على القوانين:
+- حجرة تكسر مقص.
+- ورقة تغطي حجرة.
+- مقص يقطّع ورقة.
+- لو الاختيارات زي بعض، يبقى تعادل.
+خلونا نكتب الكود:
+```python
+import random
+choices = ['rock', 'paper', 'scissors']
+computer_choice = random.choice(choices)
+player_choice = input('Choose (rock, paper, scissors): ')
+print('You chose:', player_choice)
+print('Computer chose:', computer_choice)
+if player_choice == computer_choice:
+    print('It\'s a tie!')
+elif player_choice == 'rock' and computer_choice == 'scissors':
+    print('You win! Rock breaks scissors!')
+elif player_choice == 'paper' and computer_choice == 'rock':
+    print('You win! Paper covers rock!')
+elif player_choice == 'scissors' and computer_choice == 'paper':
+    print('You win! Scissors cut paper!')
+else:
+    print('Computer wins!')
+```
+لما تشغل الكود، هتختار حاجة، والكمبيوتر هيختار، وبعدين هيقول مين كسب.
+خلونا نفهم الكود:
+- `random.choice(choices)` يختار حاجة عشوائية من القايمة `['rock', 'paper', 'scissors']`.
+- `input` ياخد اختيار اللاعب.
+- `if player_choice == computer_choice:` يعني لو نفس الاختيار، تعادل.
+- `elif` بيفحص حالات الفوز (زي Rock breaks scissors).
+- `else` يعني الكمبيوتر كسب لو ما تحققش أي حالة فوز.
+*(ارسم على السبورة حجرة، ورقة، مقص، وسهام توضح مين بيكسب مين، زي 'حجرة -> مقص'.)*
+**20-40 دقيقة: نشاط تفاعلي**
+"هنعمل نشاطين! الأول، هنكتب اللعبة زي الكود بتاعنا. اكتبوا الكود ده:
+```python
+import random
+choices = ['rock', 'paper', 'scissors']
+computer_choice = random.choice(choices)
+player_choice = input('Choose (rock, paper, scissors): ')
+print('You chose:', player_choice)
+print('Computer chose:', computer_choice)
+if player_choice == computer_choice:
+    print('It\'s a tie!')
+elif player_choice == 'rock' and computer_choice == 'scissors':
+    print('You win! Rock breaks scissors!')
+elif player_choice == 'paper' and computer_choice == 'rock':
+    print('You win! Paper covers rock!')
+elif player_choice == 'scissors' and computer_choice == 'paper':
+    print('You win! Scissors cut paper!')
+else:
+    print('Computer wins!')
+```
+افتحوا Thonny أو Replit، اكتبوا الكود، وجربوا تلعبوا مرتين. لو كسبتوا الكمبيوتر، يبقى نجحتوا!"
+*(امنح 10 دقايق يكتبوا ويجربوا. ساعدهم لو نسيوا `random.choice`.)*
+"النشاط التاني، جربوا تلعبوا 3 مرات وغيروا اختياركم كل مرة (rock, paper, scissors). مين هيشارك مين كسب أكتر؟"
+*(امنح 5 دقايق إضافية للتجربة.)*
+**40-55 دقيقة: تحدي صغير + مناقشة**
+"عندنا تحدي! هنضيف فحص عشان لو اللاعب كتب حاجة غلط (زي 'قلم')، البرنامج يقوله 'اختيار غلط'. غيروا الكود كده:
+```python
+import random
+choices = ['rock', 'paper', 'scissors']
+player_choice = input('Choose (rock, paper, scissors): ')
+if player_choice not in choices:
+    print('Invalid choice! Choose rock, paper, or scissors.')
+else:
+    computer_choice = random.choice(choices)
+    print('You chose:', player_choice)
+    print('Computer chose:', computer_choice)
+    if player_choice == computer_choice:
+        print('It\'s a tie!')
+    elif player_choice == 'rock' and computer_choice == 'scissors':
+        print('You win! Rock breaks scissors!')
+    elif player_choice == 'paper' and computer_choice == 'rock':
+        print('You win! Paper covers rock!')
+    elif player_choice == 'scissors' and computer_choice == 'paper':
+        print('You win! Scissors cut paper!')
+    else:
+        print('Computer wins!')
+```
+جربوا، وادخلوا حاجة غلط زي 'قلم' عشان تشوفوا الرسالة. مين هيشارك نتيجته؟"
+*(امنح 5 دقايق يكتبوا، وبعدين اطلب من 2-3 أطفال يشاركوا.)*
+**55-60 دقيقة: تلخيص وتشجيع**
+"برافو عليكم! النهاردة بنينا لعبة حجرة ورقة مقص ممتعة وتحدينا الكمبيوتر. المرة الجاية هنعمل مشروع كبير يجمع كل اللي اتعلمناه. فكروا في ألعاب تانية عايزين نعملها، زي لعبة أسئلة، وهنناقشها مع بعض!"
+##### **الهدف التعليمي**
+- إنشاء لعبة حجرة ورقة مقص باستخدام `random`, `input`, و`if-else`.
+- فهم كيفية فحص اختيارات المستخدم والتعامل مع الحالات المختلفة.
+- تطبيق القوائم والشروط في مشروع تفاعلي.
+##### **مثال عملي**
+```python
+import random
+choices = ['rock', 'paper', 'scissors']
+computer_choice = random.choice(choices)
+player_choice = input('Choose (rock, paper, scissors): ')
+print('You chose:', player_choice)
+print('Computer chose:', computer_choice)
+if player_choice == computer_choice:
+    print('It\'s a tie!')
+elif player_choice == 'rock' and computer_choice == 'scissors':
+    print('You win! Rock breaks scissors!')
+elif player_choice == 'paper' and computer_choice == 'rock':
+    print('You win! Paper covers rock!')
+elif player_choice == 'scissors' and computer_choice == 'paper':
+    print('You win! Scissors cut paper!')
+else:
+    print('Computer wins!')
+```
+##### **النشاط التطبيقي**
+- **المهمة 1**: كتابة برنامج لعبة حجرة ورقة مقص.
+- **المهمة 2**: تجربة اللعبة 3 مرات باختيارات مختلفة.
+- **الكود**: كما في المثال العملي.
+- **الطريقة**: كتابة الكود في Thonny أو Replit.
+##### **التحدي الصغير**
+- **السؤال**: إضافة فحص لاختيار غير صحيح.
+- **مثال إجابة**: الكود المعدل في التحدي.
+##### **نصايح للمعلم**
+- وضح قوانين اللعبة بمثال عملي على السبورة.
+- لو طفل نسي فحص التعادل، اشرح إن الشرط الأول لازم يكون `==`.
+- شجعهم يجربوا اللعبة كذا مرة ويحاولوا يكسبوا الكمبيوتر.
+- لو في وقت، خليهم يضيفوا عداد نقاط (زي نقطة لكل فوز).
+- لو في أخطاء، زي كتابة اختيار غلط، اشرح إزاي نفحص الإدخال.
+
+</div>

@@ -1,0 +1,112 @@
+<div dir="rtl">
+
+##### **سكريبت الشرح (بلهجة مصرية) - 60 دقيقة**
+**0-5 دقايق: مقدمة ممتعة**
+"يا شباب، تخيلوا إنكم عايزين تعملوا برنامج ياخد جملة ويقلبها أو يقطّعها زي لعبة الكلام! النهاردة هنتعلم إزاي نلعب بالنصوص في بايثون بشكل أعمق. هنقطّع الكلام، نغيّر الحروف، ونعمل حاجات ممتعة زي عدّ الكلمات أو قلب جملة. جاهزين؟ يلا!"
+**5-20 دقيقة: شرح التعامل مع النصوص**
+"في بايثون، النصوص (الـStrings) زي خيوط الكلام، نقدر نقطّعها، نغيّرها، أو نفحصها. اتعلمنا قبل كده نطبع نصوص ونستخدم `input`، بس دلوقتي هنتعلم حاجات أقوى:
+- **تقطيع النصوص**: نستخدم الأمر `split()` عشان نقسم جملة لكلمات.
+- **عدّ الحروف أو الكلمات**: نستخدم `len()`.
+- **تغيير الحروف**: زي `upper()` لتحويل النص لكابيتال أو `lower()` لتحويله لصغير.
+- **قلب النصوص**: نستخدم `[::-1]` عشان نقلب النص.
+خلونا نجرب مثال:
+```python
+sentence = input('Write a sentence: ')
+words = sentence.split()
+print('Words in sentence:', words)
+print('Number of words:', len(words))
+```
+لو كتبت 'I love programming'، هيطلع:
+Words in sentence: ['I', 'love', 'programming']
+Number of words: 3
+خلونا نفهم:
+- `sentence.split()` بيقسم الجملة عند المسافات لقايمة كلمات.
+- `len(words)` بيعد عدد الكلمات في القايمة.
+مثال تاني، لو عايزين نغيّر النص:
+```python
+name = input('What is your name? ')
+name_upper = name.upper()
+name_lower = name.lower()
+print('Your name in uppercase:', name_upper)
+print('Your name in lowercase:', name_lower)
+```
+لو كتبت 'Ahmed'، هيطلع:
+Your name in uppercase: AHMED
+Your name in lowercase: ahmed
+مثال تالت، نقلب جملة:
+```python
+sentence = input('Write a sentence: ')
+reversed_sentence = sentence[::-1]
+print('Reversed sentence:', reversed_sentence)
+```
+لو كتبت 'Hello'، هيطلع: olleH.
+*(ارسم على السبورة جملة زي 'I love programming'، وجنبها الكلمات مقطعة في قايمة، ووضح إزاي `split()` بيفصل الكلام.)*
+**20-40 دقيقة: نشاط تفاعلي**
+"هنعمل نشاطين! الأول، هنقطّع جملة ونعد كلماتها. اكتبوا الكود ده:
+```python
+sentence = input('Write a sentence: ')
+words = sentence.split()
+print('Your words:', words)
+print('Number of words:', len(words))
+```
+افتحوا Thonny أو Replit، اكتبوا الكود، وجربوا جملة زي 'I want to play'. لو ظهرت الكلمات وعددها، يبقى نجحتوا!"
+*(امنح 10 دقايق يكتبوا ويجربوا. ساعدهم لو نسيوا `split()`.)*
+"النشاط التاني، هنغيّر نص لكابيتال ونقلب الجملة. اكتبوا الكود ده:
+```python
+text = input('Write a word or sentence: ')
+text_upper = text.upper()
+text_reversed = text[::-1]
+print('Your text in uppercase:', text_upper)
+print('Your text reversed:', text_reversed)
+```
+جربوا كلمة زي 'School' أو جملة. مين هيشارك نصه المقلب؟"
+*(امنح 5 دقايق إضافية للتجربة.)*
+**40-55 دقيقة: تحدي صغير + مناقشة**
+"عندنا تحدي! هنعمل برنامج يفحص لو الجملة فيها كلمة معينة، زي 'love'. اكتبوا الكود كده:
+```python
+sentence = input('Write a sentence: ')
+words = sentence.split()
+if 'love' in words:
+    print('Wow, you love something!')
+else:
+    print('Cannot find the word love!')
+```
+جربوا جمل زي 'I love programming' و'I want to play'. مين هيشارك جملته؟"
+*(امنح 5 دقايق يكتبوا، وبعدين اطلب من 2-3 أطفال يشاركوا.)*
+**55-60 دقيقة: تلخيص وتشجيع**
+"برافو عليكم! النهاردة اتعلمنا إزاي نقطّع النصوص، نغيّرها، ونلعب بيها. المرة الجاية هنعمل لعبة حجرة ورقة مقص ممتعة. فكروا في حاجات ممتعة نقدر نعملها بالنصوص، زي برنامج يكتب نكت، وهنناقشها مع بعض!"
+##### **الهدف التعليمي**
+- فهم كيفية التعامل مع النصوص (تقطيع، تغيير، فحص).
+- استخدام `split()`, `upper()`, `lower()`, `len()`، وقلب النصوص.
+- كتابة برامج تفاعلية تعالج النصوص.
+##### **مثال عملي**
+```python
+# تقطيع جملة
+sentence = input('Write a sentence: ')
+words = sentence.split()
+print('Words in sentence:', words)
+print('Number of words:', len(words))
+# تغيير نص
+name = input('What is your name? ')
+name_upper = name.upper()
+print('Your name in uppercase:', name_upper)
+# قلب جملة
+reversed_sentence = sentence[::-1]
+print('Reversed sentence:', reversed_sentence)
+```
+##### **النشاط التطبيقي**
+- **المهمة 1**: تقطيع جملة وعدّ كلماتها.
+- **المهمة 2**: تحويل نص لكابيتال وقلب الجملة.
+- **الكود**: كما في النشاط.
+- **الطريقة**: كتابة الكود في Thonny أو Replit.
+##### **التحدي الصغير**
+- **السؤال**: فحص وجود كلمة 'love' في جملة.
+- **مثال إجابة**: الكود في التحدي.
+##### **نصايح للمعلم**
+- وضح فكرة النصوص بمثال زي تقطيع جملة زي وصفة أكل.
+- لو طفل نسي `split()`، اشرح إنها زي تقطيع ورقة لقطع صغيرة.
+- شجعهم يجربوا نصوص مضحكة زي 'I am Superman'.
+- لو في وقت، خليهم يجربوا أمر زي `replace()` لتغيير كلمة.
+- لو في أخطاء، زي كتابة `Split()` بحرف كبير، اشرح إن الأوامر حساسة للحروف.
+
+</div>
