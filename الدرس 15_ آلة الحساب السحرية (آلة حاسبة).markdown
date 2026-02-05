@@ -10,34 +10,34 @@
 <div dir="ltr">
 
 ```python
-print('آلة الحاسبة السحرية')
-رقم1 = float(input('ادخل الرقم الأول: '))
-رقم2 = float(input('ادخل الرقم التاني: '))
-عملية = input('اختار العملية (+, -, *, /): ')
-if عملية == '+':
-    نتيجة = رقم1 + رقم2
-elif عملية == '-':
-    نتيجة = رقم1 - رقم2
-elif عملية == '*':
-    نتيجة = رقم1 * رقم2
-elif عملية == '/':
-    نتيجة = رقم1 / رقم2
+print('Magic Calculator')
+num1 = float(input('Enter first number: '))
+num2 = float(input('Enter second number: '))
+operation = input('Choose operation (+, -, *, /): ')
+if operation == '+':
+    result = num1 + num2
+elif operation == '-':
+    result = num1 - num2
+elif operation == '*':
+    result = num1 * num2
+elif operation == '/':
+    result = num1 / num2
 else:
-    نتيجة = 'عملية غلط!'
-print('النتيجة هي:', نتيجة)
+    result = 'Invalid operation!'
+print('Result:', result)
 ```
 
 </div>
 
 <div dir="rtl">
 
-لما نشغل الكود، هيسأل عن رقمين وعملية، وبعدين يطبع النتيجة. مثلاً، لو كتبت 5 و3 و+، هيطلع: النتيجة هي: 8.
+لما نشغل الكود، هيسأل عن رقمين وعملية، وبعدين يطبع النتيجة. مثلاً، لو كتبت 5 و3 و+، هيطلع: Result: 8.0.
 خلونا نفهم الكود:
 - `float(input(...))` بنستخدم `float` عشان نقدر ندخل أرقام زي 3.5 (مش بس أرقام صحيحة).
-- `عملية = input(...)` بياخد العملية زي '+' أو '-'.
-- `if عملية == '+'` يعني لو العملية جمع، نفذ الجمع.
+- `operation = input(...)` بياخد العملية زي '+' أو '-'.
+- `if operation == '+'` يعني لو العملية جمع، نفذ الجمع.
 - `elif` يعني 'وإلا لو'، بنستخدمها عشان نفحص عمليات تانية.
-- `else` لو المستخدم كتب حاجة غلط زي '@'، يطبع 'عملية غلط!'.
+- `else` لو المستخدم كتب حاجة غلط زي '@'، يطبع 'Invalid operation!'.
 - المسافات (4 مسافات) قبل كل أمر جو `if` أو `elif` مهمة جدًا.
 *(ارسم على السبورة آلة حاسبة صغيرة، وجنبها أمثلة زي '5 + 3 = 8'، ووضح إزاي الكود بيفحص العملية.)*
 **20-40 دقيقة: نشاط تفاعلي**
@@ -47,21 +47,21 @@ print('النتيجة هي:', نتيجة)
 <div dir="ltr">
 
 ```python
-print('آلة الحاسبة')
-رقم1 = float(input('ادخل الرقم الأول: '))
-رقم2 = float(input('ادخل الرقم التاني: '))
-عملية = input('اختار (+, -, *, /): ')
-if عملية == '+':
-    نتيجة = رقم1 + رقم2
-elif عملية == '-':
-    نتيجة = رقم1 - رقم2
-elif عملية == '*':
-    نتيجة = رقم1 * رقم2
-elif عملية == '/':
-    نتيجة = رقم1 / رقم2
+print('Calculator')
+num1 = float(input('Enter first number: '))
+num2 = float(input('Enter second number: '))
+operation = input('Choose (+, -, *, /): ')
+if operation == '+':
+    result = num1 + num2
+elif operation == '-':
+    result = num1 - num2
+elif operation == '*':
+    result = num1 * num2
+elif operation == '/':
+    result = num1 / num2
 else:
-    نتيجة = 'عملية غلط!'
-print('النتيجة:', نتيجة)
+    result = 'Invalid operation!'
+print('Result:', result)
 ```
 
 </div>

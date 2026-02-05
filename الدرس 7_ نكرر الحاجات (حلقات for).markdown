@@ -57,7 +57,7 @@ for i in range(1, 6):
 
 ```python
 for i in range(5):
-    print('I am [اسمك]')
+    print('I am [your name]')
 ```
 
 </div>
