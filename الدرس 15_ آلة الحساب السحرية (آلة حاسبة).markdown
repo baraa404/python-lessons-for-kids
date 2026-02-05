@@ -79,23 +79,23 @@ print('Result:', result)
 <div dir="ltr">
 
 ```python
-print('آلة الحاسبة')
-رقم1 = float(input('ادخل الرقم الأول: '))
-رقم2 = float(input('ادخل الرقم التاني: '))
-عملية = input('اختار (+, -, *, /): ')
-if عملية == '+':
-    نتيجة = رقم1 + رقم2
-elif عملية == '-':
-    نتيجة = رقم1 - رقم2
-elif عملية == '*':
-    نتيجة = رقم1 * رقم2
-elif عملية == '/' and رقم2 != 0:
-    نتيجة = رقم1 / رقم2
-elif عملية == '/' and رقم2 == 0:
-    نتيجة = 'مش نقدر نقسم على صفر!'
+print('Calculator')
+num1 = float(input('Enter first number: '))
+num2 = float(input('Enter second number: '))
+operation = input('Choose (+, -, *, /): ')
+if operation == '+':
+    result = num1 + num2
+elif operation == '-':
+    result = num1 - num2
+elif operation == '*':
+    result = num1 * num2
+elif operation == '/' and num2 != 0:
+    result = num1 / num2
+elif operation == '/' and num2 == 0:
+    result = 'Cannot divide by zero!'
 else:
-    نتيجة = 'عملية غلط!'
-print('النتيجة:', نتيجة)
+    result = 'Invalid operation!'
+print('Result:', result)
 ```
 
 </div>
@@ -116,21 +116,21 @@ print('النتيجة:', نتيجة)
 <div dir="ltr">
 
 ```python
-print('آلة الحاسبة السحرية')
-رقم1 = float(input('ادخل الرقم الأول: '))
-رقم2 = float(input('ادخل الرقم التاني: '))
-عملية = input('اختار العملية (+, -, *, /): ')
-if عملية == '+':
-    نتيجة = رقم1 + رقم2
-elif عملية == '-':
-    نتيجة = رقم1 - رقم2
-elif عملية == '*':
-    نتيجة = رقم1 * رقم2
-elif عملية == '/':
-    نتيجة = رقم1 / رقم2
+print('Magic Calculator')
+num1 = float(input('Enter first number: '))
+num2 = float(input('Enter second number: '))
+operation = input('Choose operation (+, -, *, /): ')
+if operation == '+':
+    result = num1 + num2
+elif operation == '-':
+    result = num1 - num2
+elif operation == '*':
+    result = num1 * num2
+elif operation == '/':
+    result = num1 / num2
 else:
-    نتيجة = 'عملية غلط!'
-print('النتيجة هي:', نتيجة)
+    result = 'Invalid operation!'
+print('Result:', result)
 ```
 
 </div>
