@@ -5,10 +5,19 @@
 "يا شباب، تخيلوا إنكم بتعملوا قايمة تسوق للسوبر ماركت، زي: لبن، جبنة، شيكولاتة. في البرمجة، نقدر نعمل قايمة زي دي ونحط فيها حاجات كتير، ونستخدمها بسهولة! النهاردة هنتعلم حاجة اسمها **القوائم**، وهنخلي الكمبيوتر يعرض القايمة أو يضيف حاجات جديدة. جاهزين؟ يلا!"
 **5-20 دقيقة: شرح القوائم**
 "في بايثون، القايمة (List) زي صندوق كبير بتحط فيه حاجات كتير، زي أسماء، أرقام، أو حتى كلام. بنعمل قايمة باستخدام الأقواس المربعة `[]`. خلونا نجرب مثال:
+</div>
+
+<div dir="ltr">
+
 ```python
 shopping_list = ['milk', 'cheese', 'chocolate']
 print(shopping_list)
 ```
+
+</div>
+
+<div dir="rtl">
+
 لما نشغل الكود، هيطلع: ['milk', 'cheese', 'chocolate'].
 خلونا نفهم الكود:
 - `shopping_list` هو اسم الصندوق الكبير (القايمة).
@@ -20,24 +29,51 @@ print(shopping_list)
 - `cheese` في المكان 1.
 - `chocolate` في المكان 2.
 مثلاً:
+</div>
+
+<div dir="ltr">
+
 ```python
 shopping_list = ['milk', 'cheese', 'chocolate']
 print(shopping_list[1])
 ```
+
+</div>
+
+<div dir="rtl">
+
 هيطلع: cheese، عشان `1` يعني ثاني حاجة في القايمة.
 نقدر نضيف حاجة للقايمة باستخدام `append`. مثلاً:
+</div>
+
+<div dir="ltr">
+
 ```python
 shopping_list = ['milk', 'cheese', 'chocolate']
 shopping_list.append('juice')
 print(shopping_list)
 ```
+
+</div>
+
+<div dir="rtl">
+
 هيطلع: ['milk', 'cheese', 'chocolate', 'juice'].
 نقدر كمان نكرر القايمة باستخدام حلقة `for`. مثلاً:
+</div>
+
+<div dir="ltr">
+
 ```python
 shopping_list = ['milk', 'cheese', 'chocolate']
 for item in shopping_list:
     print('I need to buy', item)
 ```
+
+</div>
+
+<div dir="rtl">
+
 هيطلع:
 I need to buy milk
 I need to buy cheese
@@ -45,28 +81,55 @@ I need to buy chocolate
 *(ارسم على السبورة قايمة زي دفتر مكتوب فيه 'milk، cheese، chocolate'، ووضح إزاي `append` بيضيف حاجة جديدة.)*
 **20-40 دقيقة: نشاط تفاعلي**
 "هنعمل نشاطين! الأول، هنكتب قايمة تسوق بـ3 حاجات، ونطبعها. اكتبوا الكود كده:
+</div>
+
+<div dir="ltr">
+
 ```python
 shopping_list = ['[item1]', '[item2]', '[item3]']
 print(shopping_list)
 ```
+
+</div>
+
+<div dir="rtl">
+
 افتحوا Thonny أو Replit، اكتبوا الكود، واضغطوا Run. لو ظهرت القايمة، يبقى نجحتوا! جربوا تطبعوا حاجة واحدة، زي `shopping_list[0]`."
 *(امنح 10 دقايق يكتبوا ويجربوا. ساعدهم لو نسيوا الأقواس المربعة أو كتبوا الرقم غلط.)*
 "النشاط التاني، هنضيف حاجة جديدة للقايمة ونطبع كل حاجة لوحدها. اكتبوا الكود كده:
+</div>
+
+<div dir="ltr">
+
 ```python
 shopping_list = ['milk', 'cheese', 'chocolate']
 shopping_list.append('banana')
 for item in shopping_list:
     print('I need', item)
 ```
+
+</div>
+
+<div dir="rtl">
+
 جربوا، وغيروا الحاجة الجديدة لأي حاجة، زي 'apple'."
 *(امنح 5 دقايق إضافية للتجربة.)*
 **40-55 دقيقة: تحدي صغير + مناقشة**
 "عندنا تحدي! هنعمل قايمة بأسماء 4 أصدقاء، ونطبع رسالة لكل واحد. اكتبوا الكود كده:
+</div>
+
+<div dir="ltr">
+
 ```python
 friends = ['John', 'Sarah', 'Mike', 'Emma']
 for name in friends:
     print('Hello', name, ', how are you?')
 ```
+
+</div>
+
+<div dir="rtl">
+
 خلونا نفهم:
 - `friends` هي القايمة بأسماء الأصدقاء.
 - `for name in friends:` يعني خد كل اسم واطبع رسالة.
@@ -79,6 +142,10 @@ for name in friends:
 - الوصول لعناصر القايمة باستخدام الـIndex.
 - إضافة عناصر باستخدام `append` وتكرار القايمة بـ`for`.
 ##### **مثال عملي**
+</div>
+
+<div dir="ltr">
+
 ```python
 # إنشاء قايمة
 shopping_list = ['milk', 'cheese', 'chocolate']
@@ -92,19 +159,33 @@ print(shopping_list)
 for item in shopping_list:
     print('I need to buy', item)
 ```
+
+</div>
+
+<div dir="rtl">
+
 ##### **النشاط التطبيقي**
 - **المهمة 1**: كتابة قايمة تسوق بـ3 حاجات وطباعتها.
 - **المهمة 2**: إضافة حاجة جديدة وطباعة القايمة باستخدام `for`.
 - **الكود**: كما في المثال العملي.
-- **الطريقة**: كتابة الكود في Thonny أو Replit.
+- **الطريقة**: كتابة الكود .
 ##### **التحدي الصغير**
 - **السؤال**: اكتب كود يطبع رسالة لكل اسم في قايمة بـ4 أسماء.
 - **مثال إجابة**:
-  ```python
+  </div>
+
+<div dir="ltr">
+
+```python
   friends = ['John', 'Sarah', 'Mike', 'Emma']
   for name in friends:
       print('Hello', name, ', how are you?')
   ```
+
+</div>
+
+<div dir="rtl">
+
 ##### **نصايح للمعلم**
 - وضح فكرة القايمة بمثال زي دفتر درجات المدرسة.
 - لو طفل كتب مفتاح غلط (زي `'milk'` بدل `'Milk'`)، اشرح إن المفتاح لازم يكون زي ما كتبناه بالظبط.

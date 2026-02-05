@@ -5,13 +5,31 @@
 "يا شباب، النهاردة هنتعلم حاجة زي السحر اسمها **المتغيرات**! تخيلوا إن المتغيرات زي صناديق سحرية بتحطوا فيها حاجات زي اسمكم، سنكم، أو حتى أكلتكم المفضلة. وبعدين تقدروا تستخدموا الصندوق ده في أي وقت بدل ما تكتبوا الكلام كل مرة. جاهزين نعمل صناديقنا السحرية؟ يلا!"
 **5-20 دقيقة: شرح المتغيرات**
 "المتغير زي صندوق بتديله اسم، وتحط فيه حاجة. مثلاً، لو عايز أحفظ اسمي، بكتب:
+</div>
+
+<div dir="ltr">
+
 ```python
 name = "Sarah"
 ```
+
+</div>
+
+<div dir="rtl">
+
 الصندوق اسمه 'name'، وفيه كلمة 'Sarah'. لو عايز أطبع محتوى الصندوق، بكتب:
+</div>
+
+<div dir="ltr">
+
 ```python
 print(name)
 ```
+
+</div>
+
+<div dir="rtl">
+
 هيطلع: Sarah. يعني احنا حفظنا الاسم واستخدمناه!
 خلونا نفهم الكود ده بالتفصيل:
 - كلمة `name` دي أنا اخترتها عشان أسمي الصندوق. ممكن أختار أي اسم، زي `my_name` أو `myName`, بس لازم يكون بدون مسافات. مثلاً، `my name` غلط عشان فيه مسافة.
@@ -19,17 +37,35 @@ print(name)
 - الكلام `"Sarah"` لازم يكون بين علامات اقتباس `""` عشان الكمبيوتر يعرف إنه كلام، مش تعليمة.
 - لو نسيت علامات الاقتباس، الكمبيوتر هيفكر إن `Sarah` تعليمة، وهيزعل!
 نقدر نحط حاجات تانية في الصناديق، زي أرقام. مثلاً:
+</div>
+
+<div dir="ltr">
+
 ```python
 age = 12
 apples = 3
 ```
+
+</div>
+
+<div dir="rtl">
+
 الصندوق `age` فيه رقم 12، و`apples` فيه 3. الأرقام مش محتاجة علامات اقتباس، عشان الكمبيوتر بيعرف إنها أرقام.
 طيب، إيه فايدة الصناديق دي؟ نقدر نستخدمها في جمل. مثلاً:
+</div>
+
+<div dir="ltr">
+
 ```python
 name = "Sarah"
 age = 12
 print("I am", name, "and I am", age, "years old")
 ```
+
+</div>
+
+<div dir="rtl">
+
 لما نشغل الكود، هيطلع: I am Sarah and I am 12 years old.
 خلونا نفهم الكود ده:
 - في `print`، بنكتب `"I am"` و`"years old"` بين علامات اقتباس عشان دي كلام.
@@ -38,12 +74,21 @@ print("I am", name, "and I am", age, "years old")
 *(ارسم على السبورة صندوق مكتوب عليه 'name' وفيه 'Sarah'، وصندوق تاني مكتوب عليه 'age' وفيه 12. وضح إزاي الكمبيوتر بيستخدم محتوى الصندوق في `print`.)*
 **20-40 دقيقة: نشاط تفاعلي**
 "دلوقتي هنعمل نشاط ممتع! كل واحد هيعمل 3 صناديق: واحد لاسمه، واحد لسنه، وواحد لأكلته المفضلة. وبعدين هنطبع جملة حلوة. اكتبوا الكود كده:
+</div>
+
+<div dir="ltr">
+
 ```python
 name = "Ahmed"  # Put your name here
 age = 11        # Put your age here
 favorite_food = "Pizza"  # Put your favorite food here
 print("I am", name, "and I am", age, "years old, and I love", favorite_food)
 ```
+
+</div>
+
+<div dir="rtl">
+
 خلونا نفهم الكود:
 - الصندوق `name` فيه اسمك، لازم يكون بين علامات اقتباس.
 - الصندوق `age` فيه رقم، مش محتاج علامات اقتباس.
@@ -55,6 +100,10 @@ print("I am", name, "and I am", age, "years old, and I love", favorite_food)
 *(امنح 5 دقايق إضافية للتجربة، وشجعهم يشاركوا الجمل.)*
 **40-55 دقيقة: تحدي صغير + مناقشة**
 "عندنا تحدي! كل واحد هيعمل برنامج يطبع جملة عن حلمه، باستخدام 4 صناديق: الاسم، السن، الأكلة المفضلة، والحلم. مثلاً:
+</div>
+
+<div dir="ltr">
+
 ```python
 name = "Sarah"
 age = 12
@@ -62,6 +111,11 @@ favorite_food = "Pizza"
 dream = "to become a doctor"
 print("I am", name, "and I am", age, "years old, I love", favorite_food, "and my dream is", dream)
 ```
+
+</div>
+
+<div dir="rtl">
+
 جربوا، ولو ظهرت الجملة كاملة، يبقى برافو! مين هيشارك جملته؟"
 *(امنح 5 دقايق يكتبوا، وبعدين اطلب من 2-3 أطفال يعرضوا الكود بتاعهم.)*
 **55-60 دقيقة: تلخيص وتشجيع**
@@ -71,6 +125,10 @@ print("I am", name, "and I am", age, "years old, I love", favorite_food, "and my
 - استخدام المتغيرات مع `print` لطباعة جمل.
 - كتابة برامج بسيطة تجمع بين نصوص ومتغيرات.
 ##### **مثال عملي**
+</div>
+
+<div dir="ltr">
+
 ```python
 # Boxes for name and age
 name = "Sarah"
@@ -80,26 +138,49 @@ print("I am", name, "and I am", age, "years old")
 favorite_food = "Pizza"
 print("I love", favorite_food)
 ```
+
+</div>
+
+<div dir="rtl">
+
 ##### **النشاط التطبيقي**
 - **المهمة**: إنشاء 3 متغيرات (name, age, favorite_food)، وطباعة جملة كاملة.
 - **الكود**:
-  ```python
+  </div>
+
+<div dir="ltr">
+
+```python
   name = "Ahmed"
   age = 11
   favorite_food = "Pizza"
   print("I am", name, "and I am", age, "years old, and I love", favorite_food)
   ```
-- **الطريقة**: كتابة الكود في Thonny أو Replit، وتجربة تغيير الأكلة.
+
+</div>
+
+<div dir="rtl">
+
+- **الطريقة**: كتابة الكود وتجربة تغيير الأكلة.
 ##### **التحدي الصغير**
 - **السؤال**: اكتب كود يطبع جملة باستخدام 4 متغيرات (name, age, favorite_food, dream).
 - **مثال إجابة**:
-  ```python
+  </div>
+
+<div dir="ltr">
+
+```python
   name = "Sarah"
   age = 12
   favorite_food = "Pizza"
   dream = "to become a doctor"
   print("I am", name, "and I am", age, "years old, I love", favorite_food, "and my dream is", dream)
   ```
+
+</div>
+
+<div dir="rtl">
+
 ##### **نصايح للمعلم**
 - ارسم صناديق على السبورة (مثل صندوق مكتوب عليه 'name' وفيه 'Sarah') عشان توضح فكرة المتغيرات.
 - لو طفل نسي علامات الاقتباس، اشرح إن الكلام لازم يكون بين `""`، والأرقام لا.
